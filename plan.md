@@ -10,6 +10,7 @@
 6. State Management
 7. API call methods
 8. Navigation Routes
+9. Animations
 
 ## To Read
 
