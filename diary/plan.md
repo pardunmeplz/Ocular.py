@@ -1,6 +1,6 @@
 # Project Plans
 
-## todo
+## Phases
 
 1. Architecture
 2. Design Principles
@@ -17,3 +17,9 @@
 1. pyscript
 2. website architectures
 3. Skulpt
+
+## To Do
+
+1. Write a webpage with pyscript - to understand the tools
+2. Write a webpage with skulpt - look for a good design pattern for inspiration
+3. Impliment a virual dom
