@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://cdn.jsdelivr.net/pyodide/v0.20.0/full/pyodide.js"></script>
+    <title>Test</title>
+<head>
+
+<body id = "Body" style = "background-color : black ;color : white ;">
+    <script>
+        loadPyodide().then(async pyodide =>  {
+        
+        await pyodide.runPythonAsync(`
+        from pyodide.http import pyfetch
+        response = await pyfetch("src/main.py")
+        with open("main.py", "wb") as f:
+            f.write(await response.bytes())
+        `)
+        
+        pyodide.runPython(`
+        import main
+        main.init()`)
+        })    
+    </script>
+</body>
+
+</html>
